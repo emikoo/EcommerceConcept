@@ -1,4 +1,4 @@
-package com.teenteen.ecommerceconcept.presentation.ui.fragments.card
+package com.teenteen.ecommerceconcept.presentation.ui.fragments.cart
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -6,7 +6,7 @@ import androidx.navigation.fragment.findNavController
 import com.teenteen.ecommerceconcept.databinding.FragmentCardBinding
 import com.teenteen.ecommerceconcept.presentation.ui.base.BaseFragment
 
-class CardFragment() : BaseFragment<FragmentCardBinding>() {
+class CartFragment() : BaseFragment<FragmentCardBinding>() {
 
     override fun attachBinding(
         list: MutableList<FragmentCardBinding> ,

@@ -2,14 +2,10 @@ package com.teenteen.ecommerceconcept.presentation.ui.fragments.home
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
-import androidx.navigation.ui.setupWithNavController
 import com.teenteen.ecommerceconcept.R
 import com.teenteen.ecommerceconcept.databinding.FragmentHomeBinding
 import com.teenteen.ecommerceconcept.presentation.ui.base.BaseFragment
-import com.teenteen.ecommerceconcept.presentation.ui.utils.isGone
-import com.teenteen.ecommerceconcept.presentation.ui.utils.isVisible
 
 class HomeFragment : BaseFragment<FragmentHomeBinding>() {
     override fun attachBinding(
@@ -29,8 +25,8 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
         binding.chipBottomNavigation.setItemSelected(binding.bottomNavigation.selectedItemId , true)
         binding.chipBottomNavigation.setOnItemSelectedListener { itemId ->
             when(itemId) {
-                R.id.cardFragment -> {
-                    findNavController().navigate(R.id.action_homeFragment_to_cardFragment)
+                R.id.cartFragment -> {
+                    findNavController().navigate(R.id.action_homeFragment_to_cartFragment)
                     binding.chipBottomNavigation.setItemSelected(R.id.homeFragment , true)
                 }
             }

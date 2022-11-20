@@ -7,9 +7,9 @@
         android:icon="@drawable/ic_dot"
         app:showAsAction="always"/>
 
-    <item android:id="@+id/cardFragment"
-        android:title="Card"
-        android:icon="@drawable/ic_card"
+    <item android:id="@+id/cartFragment"
+        android:title="My cart"
+        android:icon="@drawable/ic_cart"
         app:showAsAction="always"/>
 
     <item android:id="@+id/favoriteFragment"
