@@ -1,12 +1,12 @@
 package com.teenteen.ecommerceconcept.presentation.ui.activity
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.ui.setupWithNavController
 import com.teenteen.ecommerceconcept.R
 import com.teenteen.ecommerceconcept.databinding.ActivityMainBinding
+
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -25,10 +25,8 @@ class MainActivity : AppCompatActivity() {
         val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         navController = navHostFragment.navController
-        binding.chipBottomNavigation.setItemSelected(binding.bottomNavigation.selectedItemId , true)
-        binding.chipBottomNavigation.setOnItemSelectedListener { itemId ->
-            binding.bottomNavigation.selectedItemId = itemId
-        }
-        binding.bottomNavigation.setupWithNavController(navController)
+        val navGraph = navController.navInflater.inflate(R.navigation.nav_graph)
+        navGraph.setStartDestination(R.id.homeFragment)
+        navController.graph = navGraph
     }
 }
