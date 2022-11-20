@@ -15,7 +15,11 @@
             app:destination="@id/homeFragment" />
         <action
             android:id="@+id/action_homeFragment_to_cardFragment"
-            app:destination="@id/cardFragment" />
+            app:destination="@id/cardFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_right" />
     </fragment>
 
     <fragment

@@ -25,4 +25,16 @@
         <item name="android:background">@color/white</item>
         <item name="itemIconTint">@color/colorBlack</item>
     </style>
+
+    <style name="title_15sp_medium_black">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">@dimen/sp_15</item>
+        <item name="android:fontFamily">@font/markpro_medium</item>
+    </style>
+
+    <style name="title_35sp_bold_black">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">@dimen/sp_35</item>
+        <item name="android:fontFamily">@font/markpro_bold</item>
+    </style>
 </resources>
