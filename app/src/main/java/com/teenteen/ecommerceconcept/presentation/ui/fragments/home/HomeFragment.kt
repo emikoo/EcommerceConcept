@@ -19,6 +19,8 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
 
     override fun setupViews() {
         setupNavigation()
+        binding.searchView.queryHint = "Search"
+        binding.searchView.setOnSearchClickListener {  }
     }
 
     private fun setupNavigation() {

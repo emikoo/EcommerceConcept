@@ -10,5 +10,6 @@
 
     <color name="colorRed">#FF6E4E</color>
     <color name="colorBlack">#010035</color>
+    <color name="colorGrey">#80010035</color>
     <color name="colorBackground">#F5F5F5</color>
 </resources>
